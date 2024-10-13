@@ -16,3 +16,5 @@ SELECT first_name "Customer first name", last_name "Customer last name" FROM cus
 
 INSERT INTO public."customers"("first_name", "last_name") VALUES ('Arma', 'Lama');
 
+UPDATE customers SET last_name='Army' WHERE id='2';
+
