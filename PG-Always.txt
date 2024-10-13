@@ -1,4 +1,16 @@
+***************
 BASIC COMMANDS:
 ***************
 
+SELECT * FROM customers LIMIT 10;
+
+SELECT first_name, last_name FROM customers LIMIT 10;
+
+SELECT * FROM customers WHERE id != '3'; // To filter with a WHERE clause (<, >, <=, >=, etc).
+
+SELECT * FROM customers WHERE first_name LIKE '%A' // To filter for records where first name ends with "A or a"
+
+SELECT first_name "Customer first name", last_name "Customer last name" FROM customers LIMIT 10;  // Useful for running report (To rename Columns).
+
 INSERT INTO public."customers"("first_name", "last_name") VALUES ('Arma', 'Lama');
+
