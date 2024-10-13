@@ -8,7 +8,9 @@ SELECT first_name, last_name FROM customers LIMIT 10;
 
 SELECT * FROM customers WHERE id != '3'; // To filter with a WHERE clause (<, >, <=, >=, etc).
 
-SELECT * FROM customers WHERE first_name LIKE '%A' // To filter for records where first name ends with "A or a"
+SELECT * FROM customers WHERE first_name LIKE '%A'; // (Wildcards) - To filter for records where first name ends with "A or a"
+
+SELECT * FROM customers WHERE NOT first_name LIKE 'Duncan' ORDER BY last_name DESC; // To order records in ASC or DESC 
 
 SELECT first_name "Customer first name", last_name "Customer last name" FROM customers LIMIT 10;  // Useful for running report (To rename Columns).
 
