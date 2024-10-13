@@ -1,0 +1,4 @@
+BASIC COMMANDS:
+***************
+
+INSERT INTO public."customers"("first_name", "last_name") VALUES ('Arma', 'Lama');
