@@ -25,6 +25,8 @@ WHERE first_name LIKE 'M%' AND date_of_birth BETWEEN '1940-01-01' AND '1969-12-3
 SELECT * FROM movie_revenues WHERE domestic_takings IS NOT NULL 
 ORDER BY domestic_takings DESC LIMIT 15; 
 
+SELECT CONCAT(first_name,' ',last_name) AS "Full name" FROM directors;
+
 
 INSERT INTO public."customers"("first_name", "last_name") VALUES ('Arma', 'Lama');
 
