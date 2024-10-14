@@ -21,6 +21,9 @@ WHERE first_name IN ('John', 'Bruce');
 SELECT first_name , last_name FROM actors
 WHERE first_name LIKE 'M%' AND date_of_birth BETWEEN '1940-01-01' AND '1969-12-31';
 
+SELECT * FROM movie_revenues WHERE domestic_takings IS NOT NULL  // This is so important for filtering our missing data.
+ORDER BY domestic_takins DESC; 
+
 
 INSERT INTO public."customers"("first_name", "last_name") VALUES ('Arma', 'Lama');
 
